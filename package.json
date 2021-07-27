@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.14",
+    "react-icons": "^4.2.0"
+  }
+}
