@@ -1,14 +1,21 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Layout from './components/presentational/layout';
+
 ReactDOM.render(
   <React.StrictMode>
-    <ChakraProvider resetCSS>
-      <App />
-    </ChakraProvider>
+    <BrowserRouter basename="/katte-ni-seichou">
+      <ChakraProvider resetCSS>
+        <Layout>
+          <App />
+        </Layout>
+      </ChakraProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
 );
